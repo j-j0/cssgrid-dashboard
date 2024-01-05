@@ -1,0 +1,94 @@
+.container {
+    display: grid;
+    max-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 6fr;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgb(97, 170, 229);
+    color: white;
+    grid-row: 1 / 4;
+  
+}
+
+.topbar {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    grid-row: 2 / 3;
+    justify-content: space-between;
+}
+
+.greeting {
+    display: flex;
+    gap: 30px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.buttons button {
+    font-size: 25px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    background-color: rgb(97, 170, 229);
+    color: white;
+    cursor: pointer;
+    
+}
+
+.buttons button:hover {
+    background-color: rgb(197, 27, 72);
+}
+.search {
+    display: flex;
+    width: 50%;
+    min-width: 20%;
+    gap: 10px;
+}
+
+.search input {
+    border-radius: 30px;
+    width: 80%;
+    margin: 10px;
+    background-color: lightgray;
+}
+.search img {
+    height: 35px;
+    margin: 10px;
+}
+
+.userprofile {
+    display: flex;
+    gap: 50px
+}
+
+.userprofile h4 {
+    margin: 10px;
+}
+.nav {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
